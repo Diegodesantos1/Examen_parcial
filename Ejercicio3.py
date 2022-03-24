@@ -56,9 +56,9 @@ class Cuenta_Bancaria:
     eleccion=int(input())
     if eleccion == 1 and tipo_cuenta == 1:
         ingresar_dinero()
-    if eleccion == 2 and tipo_cuenta == 1:
+    elif eleccion == 2 and tipo_cuenta == 1:
         retirar_dinero()
-    if eleccion == 3 and tipo_cuenta == 1:
+    elif eleccion == 3 and tipo_cuenta == 1:
         trasferir_dinero()
     if eleccion == 4 and tipo_cuenta == 4:
         retirar_dinero_fijo()
