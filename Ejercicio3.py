@@ -48,22 +48,21 @@ class Cuenta_Bancaria:
         else:
             saldo_final = saldo - (dinero_retirar + saldo * 0.05)
             print(f"Su saldo final es {saldo_final}")
-
-    print("Esta cuenta tiene un plazo fijo vigente desde ayer, por lo que habrá una comisión en sus operaciones")
     datos=["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300€"]
     print(f"\nLos datos de su cuenta bancaria son los siguientes: {datos}\n")
-    print("\nQué desea hacer con su cuenta bancaria\n --> 1: Ingresar Dinero\n --> 2: Retirar Dinero\n --> 3: Trasferir Dinero\n --> 4: Cuenta Plazo fijo\n")
+    print("\nQué desea hacer con su cuenta bancaria\n --> 1: Cuenta corriente\n --> 2: Cuenta Plazo\n --> 3: Cuenta Vip")
+    tipo_cuenta = int(input())
+    print("\nQué desea hacer con su cuenta bancaria\n --> 1: Ingresar Dinero\n --> 2: Retirar Dinero\n --> 3: Trasferir Dinero\n --> 4: Plazo fijo (Sólo válido para cuentas Plazo)\n")
     eleccion=int(input())
-    if eleccion == 1:
+    if eleccion == 1 and tipo_cuenta == 1:
         ingresar_dinero()
-    if eleccion == 2:
+    if eleccion == 2 and tipo_cuenta == 1:
         retirar_dinero()
-    if eleccion == 3:
+    if eleccion == 3 and tipo_cuenta == 1:
         trasferir_dinero()
-    if eleccion == 4:
+    if eleccion == 4 and tipo_cuenta == 4:
         retirar_dinero_fijo()
     else:
         exit()
-    hora_actual=str(datetime.now().time())
 
 Cuenta_Bancaria
