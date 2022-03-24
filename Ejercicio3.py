@@ -16,6 +16,8 @@ class Operaciones_cuenta(Cuenta_Bancaria):
     if eleccion == 1:
         def ingresar_dinero():
             print("¿Cuánto dinero quiere ingresar a su cuenta?")
+            dinero_añadir=float(input())
+            dinero_total=float(saldo) + dinero_añadir
 
 
 
