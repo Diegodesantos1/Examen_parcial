@@ -17,7 +17,7 @@ class Gato (Mamífero):
     print("Soy un gato")
 class Ornitorrinco(Ovíparo):
     super(Ovíparo)
-    print("Soy ornitorrinco")
+    print("Soy ornitorrinco ")
 
 Animal
 Mamífero
