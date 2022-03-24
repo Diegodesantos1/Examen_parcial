@@ -8,7 +8,18 @@ class Cuenta_Bancaria:
         self.numero_cuenta=numero_cuenta
         self.saldo=saldo
     def crear_datos_cuentas():
-        pass
+        datos=[]
+        numero_cuenta= random.randint(100000000000,999999999999)
+        nombre_titular = "Diego de Santos"
+        numero = random.randin(0,3)
+        numero2 = random.randint(4,6)
+        numero3= random.randint(7,9)
+        ID = f"{numero}{numero2}{numero3}"
+        fecha_apertura = random.randint(1900,2000)
+        fecha_vencimiento = random.randint(2001, 2022)
+        saldo = "10000"
+        datos.append(ID) ; datos.append(nombre_titular) ; datos.append(fecha_apertura) ; datos.append(fecha_vencimiento) ; datos.append(numero_cuenta) ; datos.append(saldo)
+
     def ingresar_dinero():
         datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "10000"]
         print("¿Cuánto dinero quiere ingresar a su cuenta?")
