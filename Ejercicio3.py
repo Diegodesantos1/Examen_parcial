@@ -20,7 +20,8 @@ class Cuenta_Bancaria:
         fecha_vencimiento = random.randint(2001, 2022)
         saldo = "10000"
         datos.append(ID) ; datos.append(nombre_titular) ; datos.append(fecha_apertura) ; datos.append(fecha_vencimiento) ; datos.append(numero_cuenta) ; datos.append(saldo)
-        print(f"\nLos datos de su cuenta bancaria son los siguientes: {datos}\n")
+        hora_actual=str(datetime.now().time())
+        print(f"\nBienvenido a tu banco de confianza, son las {hora_actual}\nLos datos de su cuenta bancaria son los siguientes: {datos}\n")
     crear_datos_cuentas()
     def ingresar_dinero():
         print("¿Cuánto dinero quiere ingresar a su cuenta?")
@@ -49,8 +50,7 @@ class Cuenta_Bancaria:
             saldo_final = saldo - dinero_trasferir
             print(f"Su saldo final es {saldo_final} € y ha enviado a la cuenta de Rubén {dinero_trasferir} €")
     def retirar_dinero_fijo():
-        hora_actual=str(datetime.now().time())
-        print(f" la hora actual es {hora_actual} y cómo el plazo fijo estaba vigente hasta el mes que viene, me temo que le cobraremos una comisión")
+        print("Cómo el plazo fijo estaba vigente hasta el mes que viene, me temo que le cobraremos una comisión")
         saldo = datos.pop(5)
         saldo = float(saldo)
         dinero_retirar=float(input(f"Su saldo actual es de {saldo}\n¿Cuánto dinero desea retirar?\n"))
