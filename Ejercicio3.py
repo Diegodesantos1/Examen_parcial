@@ -46,5 +46,6 @@ class Cuenta_Bancaria:
         trasferir_dinero()
     else:
         exit()
-
+class Plazo_fijo(Cuenta_Bancaria):
+    pass
 Cuenta_Bancaria
