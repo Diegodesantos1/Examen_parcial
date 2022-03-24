@@ -1,4 +1,4 @@
-
+import random
 from datetime import datetime
 class Cuenta_Bancaria:
     def __init__(self, ID, nombre_titular,fecha_apertura, numero_cuenta, saldo):
@@ -7,6 +7,8 @@ class Cuenta_Bancaria:
         self.fecha_apertura=fecha_apertura
         self.numero_cuenta=numero_cuenta
         self.saldo=saldo
+    def crear_datos_cuentas():
+        pass
     def ingresar_dinero():
         datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "10000"]
         print("¿Cuánto dinero quiere ingresar a su cuenta?")
