@@ -8,7 +8,7 @@ class Cuenta_Bancaria:
         self.numero_cuenta=numero_cuenta
         self.saldo=saldo
     def ingresar_dinero():
-        datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300"]
+        datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "3000"]
         print("¿Cuánto dinero quiere ingresar a su cuenta?")
         saldo = datos.pop(4)
         print(f"Su saldo actual es de {saldo}€")
