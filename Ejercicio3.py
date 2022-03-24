@@ -25,7 +25,15 @@ class Cuenta_Bancaria:
             saldo_final = saldo - dinero_retirar
             print(f"Su saldo final es {saldo_final}")
     def trasferir_dinero():
-        datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300€"]
+        datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300"]
+        saldo = datos.pop(4)
+        saldo = float(saldo)
+        dinero_trasferir=float(input(f"Su saldo actual es de {saldo}\n¿Cuánto dinero desea trasferir?\n"))
+        if saldo - dinero_trasferir < 0:
+            print("\nOperación no válida, no tienes tanto capital")
+        else:
+            saldo_final = saldo - dinero_trasferir
+            print(f"Su saldo final es {saldo_final} € y ha enviado a la cuenta de Rubén {dinero_trasferir} €")
     datos=["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300€"]
     print(f"\nLos datos de su cuenta bancaria son los siguientes: {datos}\n")
     print("\nQué desea hacer con su cuenta bancaria\n --> 1: Ingresar Dinero\n --> 2: Retirar Dinero\n --> 3: Trasferir Dinero\n")
