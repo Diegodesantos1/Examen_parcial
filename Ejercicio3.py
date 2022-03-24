@@ -10,14 +10,24 @@ class Cuenta_Bancaria:
         print(datos)
 Cuenta_Bancaria.crear_cuenta()
 class Operaciones_cuenta(Cuenta_Bancaria):
+    def ingresar_dinero():
+        datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300€"]
+        print("¿Cuánto dinero quiere ingresar a su cuenta?")
+        saldo = datos.pop
+        dinero_añadir=float(input())
+        dinero_total=float(saldo) + dinero_añadir
+    def retirar_dinero():
+        datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300€"]
+    def trasferir_dinero():
+        datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "300€"]
     print("Qué desea hacer con su cuenta bancaria\n --> 1: Ingresar Dinero\n --> 2: Retirar Dinero\n --> 3: Trasferir Dinero\n")
     eleccion=int(input())
     if eleccion == 1:
-        def ingresar_dinero():
-            print("¿Cuánto dinero quiere ingresar a su cuenta?")
-
-            dinero_añadir=float(input())
-            dinero_total=float(saldo) + dinero_añadir
+        ingresar_dinero()
+    if eleccion == 2:
+        retirar_dinero()
+    if eleccion == 3:
+        trasferir_dinero()
 
 
 
