@@ -55,7 +55,7 @@ class Cuenta_Bancaria:
         dinero_retirar=float(input(f"Su saldo actual es de {saldo}\n¿Cuánto dinero desea retirar?\n"))
         saldo_final = saldo - dinero_retirar
         print(f"Su saldo final es {saldo_final}")
-    def trasferir_dinero():
+    def trasferir_dinero_VIP():
         datos =["ID1234","Diego de Santos", "10/05/2022", "ES12345678", "3000"]
         saldo = datos.pop(4)
         saldo = float(saldo)
