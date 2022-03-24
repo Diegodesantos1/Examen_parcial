@@ -1,16 +1,27 @@
 class Animal:
-    pass
+    print("Soy un animal")
 
 class Mamífero(Animal):
-    pass
+    super(Animal)
+    print("Soy un mamífero")
 
 class Ovíparo(Mamífero):
-    pass
-
+    super(Mamífero)
+    print("Soy ovíparo")
 class Pollo(Ovíparo):
-    pass
+    super(Ovíparo)
+    print("Soy un pollo")
 
 class Gato (Mamífero):
-    pass
+    super(Mamífero)
+    print("Soy un gato")
 class Ornitorrinco(Ovíparo):
-    pass
+    super(Ovíparo)
+    print("Soy ornitorrinco")
+
+Animal
+Mamífero
+Ovíparo
+Pollo
+Gato
+Ornitorrinco
